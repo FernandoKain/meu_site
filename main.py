@@ -1,5 +1,7 @@
 # https://youtu.be/K2ejI4z8Mbg?list=PLMhVDSpAv9uXl6anUogvCnHha-K1x6sm1
 # pip install Flask
+# pip install gunicorn
+# pip freeze > requirements.txt
 from flask import Flask, render_template
 
 
@@ -24,7 +26,12 @@ def usuarios(nome_usuario):
 
 
 # Colocar o site no ar
-# if __name__ == "__main":
-app.run(debug=True) #Colocar dentro do if mais tarde para o deploy
+if __name__ == "__main":
+    app.run(debug=True) #Colocar dentro do if mais tarde para o deploy
+
+# servidor do heroku
+
+
+
 
 
