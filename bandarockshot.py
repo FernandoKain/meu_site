@@ -26,8 +26,8 @@ def usuarios(nome_usuario):
 
 
 # Colocar o site no ar
-# if __name__ == "__main":
-app.run(debug=True) #Colocar dentro do if mais tarde para o deploy
+if __name__ == "__main":
+    app.run(debug=True) #Colocar dentro do if mais tarde para o deploy
 
 # servidor do heroku
 
